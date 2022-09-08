@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LoadApp</string>
+    <string name="app_description">Download files from Internet</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="notification_title">Udacity: Android Kotlin Nanodegree </string>
+    <string name="notification_description">The Project 3 repository is downloaded</string>
+    <string name="notification_button">See changes</string>
+
+    <string name="button_name">Click me</string>
+    <string name="button_loading">We are loading </string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="glide_desc">Glide : An image loading and caching library for Android focused on smooth scrolling</string>
+    <string name="retrofit_desc">Retrofit : A type-safe HTTP client for Android and the JVM</string>
+    <string name="loadapp_desc">LoadApp : Starter project repo for C3</string>
+    <string name="button_download">Download</string>
+    <string name="file_name">File Name:</string>
+    <string name="status">Status:</string>
+
+</resources>

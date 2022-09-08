@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="fileName"
+            type="String" />
+
+        <variable
+            name="status"
+            type="String" />
+    </data>
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".DetailActivity"
+        tools:showIn="@layout/activity_detail"
+
+        app:layoutDescription="@xml/content_detail_scene">
+
+        <TextView
+            android:id="@+id/fileNameHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/file_name"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@{fileName}"
+            android:textAlignment="center"
+            tools:text="Glide"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/fileNameHolder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/fileStatusHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/status"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fileNameHolder" />
+
+        <TextView
+            android:id="@+id/fileStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{status}"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="293dp"
+            tools:layout_editor_absoluteY="50dp"
+            tools:text="Success" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

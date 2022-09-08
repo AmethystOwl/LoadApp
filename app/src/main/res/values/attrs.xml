@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoadingButton">
+        <!--   TODO: create custom attributes for the view-->
+        <attr name="lbBackgroundColor" format="color" />
+        <attr name="lbTextSize" format="float" />
+        <attr name="lbProgressBackgroundColor" format="color" />
+
+    </declare-styleable>
+</resources>
